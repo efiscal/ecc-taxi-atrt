@@ -12,8 +12,8 @@
 | Experienta | Experienta min.: System Administrator |
 
 #### SUMELE DE CONTROL (CHECKSUMS) SHA-256
-- LINUX/AMD64 - 8983891fc4062b82ea25e229f801ae511d9d76eea3137f3464a79e489be6ccba
-- LINUX/ARM64 - d75d3703493949d1b7e112e604a93c4aeb73511f3739ccd148b6f063e443deab
+- LINUX/AMD64 - 24f5948e5a30e4d4f884ee26ae301dadee59ca7d6323f5b02d71203ca66bed2b
+- LINUX/ARM64 - abcde0a1222ea2ca22ed18fffa9c7690165cc05fa2f86098e5784db398b50708
 
 
 #### OS-ul poate fi lansat prin mai multe modalități, cum ar fi:
