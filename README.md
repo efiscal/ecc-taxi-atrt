@@ -101,6 +101,14 @@
       ./archive.sh
       ```
 8. Dupa lansarea sistemului pentru prima data folosind comanda ./bin/start.sh, este nevoie de instalat licenta care v-a fost emisa de catre "Fiscal Partner", pentru aceasta este nevoie s-o aveti pe disk-ul local pentru ca mai apoi s-o incarcati prin Browser
-  9.1 Pentru incarcarea licentei este nevoie sa accesati prin Browser acest link: https://localhost:8443
+  9.1 Pentru incarcarea licentei este nevoie sa accesati prin Browser acest link: https://127.0.0.171:8443
 
 9. Pentru mai multe detalii, va rugam sa cititi manualul oficial de instalare care v-a transmis Fiscal Partner!
+
+## Local Docker ports: 127.0.0.171 only (security)
+
+`docker compose` publishes this project only on **127.0.0.171**, its own loopback address, so it can run next to
+other projects on the same machine: open https://127.0.0.171:8443. **Never publish a port on 0.0.0.0** (a bare `"8443:443"`
+does that): it opens the service to every network the machine is on, and Docker bypasses the firewall.
+The rule is at the top of `docker-compose.yml`. On macOS, run `sudo ifconfig lo0 alias 127.0.0.171 up` once after
+each boot. After pulling this change, run `docker compose up -d` to move running containers.
